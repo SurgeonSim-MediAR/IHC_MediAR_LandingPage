@@ -333,7 +333,7 @@ a {
 
 /* Section 1 Background */
 .section1-background {
-  background-image: url(/img/fondo.png);
+  background-image: url(/public/assets/img/fondo.png);
   background-size: cover;
   background-position: center;
   width: 100%;
