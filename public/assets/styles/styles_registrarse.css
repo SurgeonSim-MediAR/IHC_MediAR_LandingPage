@@ -1,0 +1,202 @@
+/* Encabezado */
+.header {
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Links en el encabezado */
+.header a {
+    text-decoration: none;
+    color: #52878E;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.header a:hover {
+    color: #1B3F45;
+}
+
+/* Logo */
+.imagen img { 
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Botones en el encabezado */
+.boton {
+    background-color: transparent;
+    color: #52878E;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #1B3F45;
+    color: white;
+    border-color: transparent;
+}
+
+.boton_comenzar, .boton_registrar button {
+    background-color: #000000;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.boton_comenzar:hover, .boton_registrar button:hover {
+    background-color: #1B3F45;
+    color: white;
+    border-color: transparent;
+}
+
+/* Pie de página */
+footer {
+    background-color: #154457;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+}
+
+footer a {
+    color: #52878E;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1B3F45;
+}
+
+/* Centrar el formulario */
+.sectionRegistrar-background {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Alinear verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Altura mínima para llenar la pantalla */
+    background-color: #154457; /* Color de fondo */
+}
+
+/* Estilos del contenedor del formulario */
+.iniciar-form-container {
+    font-family: 'IBM Plex Sans', sans-serif; /* Aplica la fuente al cuadro */
+    background-color: white; /* Color de fondo blanco para el cuadro */
+    border-radius: 15px; /* Esquinas curvadas */
+    padding: 40px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 100%; /* Ancho del cuadro (ajusta según sea necesario) */
+    max-width: 500px; /* Ancho máximo del cuadro */
+}
+
+/* Centrar el título */
+.iniciar-form-container h1 {
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 20px; /* Espacio inferior para separar del contenido */
+}
+
+/* Contenedor de inputs usando Flex */
+.iniciar-form-grid {
+    display: flex; /* Utiliza Flexbox para organizar los campos verticalmente */
+    flex-direction: column; /* Alinear los elementos en columna */
+}
+
+/* Columnas de inputs */
+.iniciar-input-column {
+   display:flex; 
+   flex-direction : column; 
+}
+
+/* Estilos para los campos de entrada */
+.input-box input,
+.checkbox-container input {
+   width : calc(100% -10px); 
+   padding :10px ; 
+   border :1px solid #ccc ; 
+   border-radius :5px ; 
+   font-size :16px ; 
+}
+
+/* Contenedor de checkbox alineado con su etiqueta */
+.checkbox-container {
+   display : flex ; 
+   align-items : center ; /* Alinea verticalmente al centro */
+   margin-bottom :15px ; /* Espaciado inferior para los checkbox */
+}
+
+.checkbox-container input {
+   margin-right :5px ; /* Espaciado a la derecha del checkbox */
+}
+
+/* Estilos específicos para los checkboxes de rol (Estudiante y Médico) */
+.checkbox-container label {
+   margin-right :20px ; /* Espacio entre los checkboxes y sus etiquetas */
+}
+
+/* Estilos para el botón de contacto */
+.registrar-submit-button {
+   background-color :#000000 ; /* Color de fondo negro */
+   color :#ffffff ; /* Color del texto blanco */
+   border :none ; /* Sin borde */
+   border-radius :5px ; /* Esquinas redondeadas para los botones */
+   padding :10px 20px ; /* Espaciado interno del botón */
+   font-size :16px ; /* Tamaño de fuente del botón */
+   cursor :pointer ; /* Cambia el cursor al pasar sobre el botón */
+   transition :background-color 0.3s ease ; /* Transición suave al cambiar de color */
+}
+
+.registrar-submit-button:hover {
+   background-color :#154457 ; /* Color más claro al pasar el mouse sobre el botón */
+}
+
+/* Estilos generales para los enlaces y textos adicionales */
+p {
+   margin :10px 0 ; /* Espaciado superior e inferior entre párrafos */
+}
+
+a {
+   color :#007bff ; /* Color azul para los enlaces */
+   text-decoration :none ; /* Sin subrayado en los enlaces */
+}
+
+a:hover {
+   text-decoration :underline ; /* Subrayar al pasar el mouse sobre el enlace */
+}
+
+.c_title {
+    text-align: center; /* Centrar el texto */
+    margin:  0; /* Espacio superior e inferior para separar del cuadro */
+    color: white
+  }
+  
+
+/* Asegurando que el pie de página esté al final de la página */
+
+body {
+   display:flex ;
+   flex-direction :column ;
+   min-height :100vh ;
+   margin :0 ;
+}
+
+main {
+   flex :1 ;
+}
+
+footer {
+   margin-top:auto ;
+}
