@@ -333,16 +333,17 @@ a {
 
 /* Section 1 Background */
 .section1-background {
-  background-image: url(/public/assets/img/fondo.png);
+  background-image: url("/public/assets/img/fondo.png"); /* Asegúrate de que la ruta sea correcta */
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
   background-repeat: no-repeat;
-  overflow: hidden;
+  height: 100vh; /* Ajusta al 100% de la altura de la ventana */
+  width: 100%; /* Asegúrate de que cubra todo el ancho */
+  display: flex; /* Permite alinear contenido */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
 }
+
 .section2-background {
   background-color: white;
   background-size: cover;
