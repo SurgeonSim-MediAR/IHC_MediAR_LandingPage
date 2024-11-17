@@ -142,19 +142,38 @@ body {
   align-items: center; /* Centra horizontalmente */
   text-align: center; /* Alinea el texto al centro */
 }
+.boton_suscribe {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  color: #154457;
+  border: 2px solid transparent;
+  border-radius: 10px;
 
-.footer-background {
-  background-color: #154457;
-  background-size: cover;
-  background-position: center;
-  width: auto;
-  height: auto;
-  padding: 0;
-  margin-top: auto;
-  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Estilos para el pie de página */
-.footer {
-  padding: 20px 0;
+.boton_suscribe:hover {
+  background-color: #1b3f45;
+  color: white;
+  border-color: transparent;
+}
+
+footer {
+  background-color: #154457;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+}
+
+.footer a {
+  color: white; /* Color de los enlaces en el pie de página */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Subrayado cuando el cursor está sobre el enlace */
 }
