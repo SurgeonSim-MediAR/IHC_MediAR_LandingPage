@@ -2,202 +2,193 @@
 <html lang="es">
 
 <head>
-    <link rel="icon" type="image/png" href="img/favicon-48x48.png" sizes="48x48" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MediAR</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon-48x48.png" sizes="48x48" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediAR</title>
 
-    <!-- Fuente IBM Plex Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+  <!-- Fuente IBM Plex Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&display=swap"
+    rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="assets/styles/styles_iniciarSesion.css">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/styles/styles_iniciarSesion.css">
+
+  <!-- Boostrap Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 
-<body>
+<!-- ENCABEZADO -->
+<header class="header">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo MEdiAr" width="75px" height="auto" />
+      </a>
 
- <!-- ENCABEZADO -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
- <header class="header">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/img/logo.png" alt="Logo MEdiAr" width="75px" height="auto" />
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-
-          <ul class="navbar-nav ms-auto">
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"><button
-                  class="boton">Inicio</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="SOLUCIONES.html"><button
-                  class="boton">Soluciones</button></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="CONTACTANOS.html"><button
-                  class="boton">Contáctanos</button></a>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><button class="boton">Inicio</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="SOLUCIONES.html"><button
+                class="boton">Soluciones</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="CONTACTANOS.html"><button
+                class="boton">Contáctanos</button></a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
-
-
-
-
-  <section class="sectionIniciar-background">
-    <!-- Título Principal -->
-    <div class="c_title">
-        <h2>¡Tu carrera empieza aquí!</h2>
     </div>
+  </nav>
+</header>
 
-    <!-- Cuadro de iniciar sesión -->
-    <div class="iniciar-form-container">
+<section class="sectionIniciar-background" style="margin-top: 100px;">
+  <!-- Cuadro de iniciar sesión -->
+  <div class="iniciar-form-container">
+    <div class="iniciar-form-grid">
+      <div class="iniciar-input-column">
         <h1>INICIAR SESION</h1>
-        <div class="iniciar-form-grid">
-            <div class="iniciar-input-column">
-                <label for="nombre">Nombre de usuario</label>
-                <div class="input-box">
-                    <input type="text" id="nombre" placeholder="Nombre y apellido" required>
-                </div>
 
-                <label for="contraseña">Contraseña</label>
-                <div class="input-box">
-                    <input type="password" id="contraseña" required placeholder="Contraseña">
-                </div>
-
-                <!-- Checkbox para permanecer conectado -->
-                <div class="checkbox-container">
-                    <input type="checkbox" id="remember-me" name="remember-me">
-                    <label for="remember-me">Permanecer conectado</label>
-                </div>
-
-                <!-- Botón Enviar -->
-                <button type="submit" class="iniciar-submit-button">Ingresar</button>
-
-                <!-- Botón para continuar con Gmail -->
-                <button type="button" class="gmail-button">Continuar con Gmail</button>
-
-                <!-- Texto para olvidar contraseña -->
-                <p>¿Olvidaste tu contraseña?</p>
-                <a href="#" id="forgot-password-link">Ingresa aquí</a>
-
-                <!-- Texto para no tener cuenta -->
-                <p>No tienes cuenta?</p>
-                <a href="REGISTRARSE.html" id="register-link" style="color: blue; text-decoration: underline; cursor: pointer;">Regístrate ahora</a>
-            </div>
-
-            <div class="contact-info-column">
-                <!-- Imagen del mapa -->
-                <div class="ImagenDoc-container">
-                    <img src="assets/img/imgIniciar.jpeg" alt="imgInicio" width="600" height="800" class="ImagenDoc-image">
-                </div>
-            </div>
+        <label for="nombre">Nombre de usuario</label>
+        <div class="input-box">
+          <input type="text" id="nombre" placeholder="Nombre y apellido" required>
         </div>
-    </div>
-</section>
 
+        <label for="contraseña">Contraseña</label>
+        <div class="input-box">
+          <input type="password" id="contraseña" required placeholder="Contraseña">
+        </div>
+
+        <!-- Checkbox para permanecer conectado -->
+        <div class="checkbox-container">
+          <input type="checkbox" id="remember-me" name="remember-me">
+          <label for="remember-me">Permanecer conectado</label>
+        </div>
+
+        <!-- Botón Enviar -->
+        <button type="submit" class="iniciar-submit-button">Ingresar</button>
+
+        <!-- Botón para continuar con Gmail -->
+        <button type="button" class="gmail-button">Continuar con Gmail</button>
+
+        <!-- Texto para olvidar contraseña -->
+        <p>¿Olvidaste tu contraseña?</p>
+        <a href="#" id="forgot-password-link">Ingresa aquí</a>
+
+        <!-- Texto para no tener cuenta -->
+        <p>No tienes cuenta?</p>
+        <a href="REGISTRARSE.html" id="register-link"
+          style="color: blue; text-decoration: underline; cursor: pointer;">Regístrate ahora</a>
+      </div>
+    </div>
+
+    <!-- Imagen dentro del formulario -->
+    <div class="contact-info-column">
+      <img src="assets/img/imgIniciar.jpeg" alt="imgInicio" class="ImagenDoc-image">
+    </div>
+  </div>
+</section>
 
 <!-- Footer / PIE DE PAGIN -->
 <footer class="footer">
-    <footer class="footer-background">
-      <div class="container ">
-        <div class="row mt-5 text-white">
-          <!-- Logo y Contacto -->
-          <div class="col-md-3">
-            <img src="assets/img/logo.png" alt="MediAR Logo" style="width: 100px;">
-            <p class="mt-3" style="text-align: left;">
-              Contact: <br>
-              +51 982 123 456<br>
-              somos.mediar@gmail.com<br>
-            </p>
+  <footer class="footer-background">
+    <div class="container ">
+      <div class="row">
+        <!-- Logo y Contacto -->
+        <div class="col-md-3">
+          <img src="assets/img/logo.png" alt="MediAR Logo" style="width: 100px;">
+          <p class="mt-3" style="text-align: left;">
+            Contact: <br>
+            +51 982 123 456<br>
+            somos.mediar@gmail.com<br>
+          </p>
 
-          </div>
-
-          <!-- Quick Links -->
-          <div class="col-md-2">
-            <h5 style="text-decoration-line:underline ; font-family: IBM Plex Sans,sans-serif; text-align: left;">Quick
-              Links
-            </h5>
-            <ul class="list-unstyled" style="text-align: left;">
-              <li><a href="#" class="text-white">Sign Up</a></li>
-              <li><a href="#" class="text-white">About Us</a></li>
-            </ul>
-          </div>
-
-          <!-- Others -->
-          <div class="col-md-2">
-            <h5 style="text-decoration-line:underline ; font-family: IBM Plex Sans,sans-serif; text-align: left;">Others
-            </h5>
-            <ul class="list-unstyled" style="text-align: left;">
-              <li><a href="#" class="text-white">User FAQs</a></li>
-              <li><a href="#" class="text-white">Contact Us</a></li>
-              <li><a href="#" class="text-white">Legal</a></li>
-              <li><a href="#" class="text-white">Privacy Policy</a></li>
-              <li><a href="#" class="text-white">Terms and Conditions</a></li>
-            </ul>
-          </div>
-
-          <!-- Products -->
-          <div class="col-md-2">
-            <h5 style="text-decoration-line:underline ; font-family: IBM Plex Sans,sans-serif; text-align: left;">
-              Products</h5>
-            <ul class="list-unstyled" style="text-align: left;">
-              <li><a href="#" class="text-white">Send</a></li>
-              <li><a href="#" class="text-white">Receive</a></li>
-              <li><a href="#" class="text-white">Buy</a></li>
-            </ul>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="col-md-3 p-0" style="text-align: left;">
-
-            <p>Subscribe to our newsletter and be the first to know about our updates</p>
-            <form class="d-flex">
-              <input type="email" class="form-control me-2" placeholder="Email Address" aria-label="Email"
-                style="border-radius: 0%; width: auto;">
-              <button class="boton_suscribe" type="submit"><b>Subscribe</b></button>
-            </form>
-          </div>
         </div>
 
-        <!-- Footer Bottom -->
+        <!-- Quick Links -->
+        <div class="col-md-2">
+          <h5 style="text-decoration-line:underline ; font-family: IBM Plex Sans,sans-serif; text-align: left;">Quick
+            Links
+          </h5>
+          <ul class="list-unstyled" style="text-align: left;">
+            <li><a href="#" class="text-white">Sign Up</a></li>
+            <li><a href="#" class="text-white">About Us</a></li>
+          </ul>
+        </div>
 
-        <!-- Texto de derechos reservados a la izquierda -->
-        <p class="mb-0 text-white">&copy; 2020. All rights reserved.</p>
+        <!-- Others -->
+        <div class="col-md-2">
+          <h5 style="text-decoration-line:underline ; font-family: IBM Plex Sans,sans-serif; text-align: left;">Others
+          </h5>
+          <ul class="list-unstyled" style="text-align: left;">
+            <li><a href="#" class="text-white">User FAQs</a></li>
+            <li><a href="#" class="text-white">Contact Us</a></li>
+            <li><a href="#" class="text-white">Legal</a></li>
+            <li><a href="#" class="text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-white">Terms and Conditions</a></li>
+          </ul>
+        </div>
 
-        <!-- Íconos de redes sociales a la derecha -->
-        <div class="mb-5">
-          <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i></a>
-          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+        <!-- Products -->
+        <div class="col-md-2">
+          <h5 style="text-decoration-line:underline ; font-family: IBM Plex Sans,sans-serif; text-align: left;">
+            Products</h5>
+          <ul class="list-unstyled" style="text-align: left;">
+            <li><a href="#" class="text-white">Send</a></li>
+            <li><a href="#" class="text-white">Receive</a></li>
+            <li><a href="#" class="text-white">Buy</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-md-3 p-0" style="text-align: left;">
+
+          <p>Subscribe to our newsletter and be the first to know about our updates</p>
+          <form class="d-flex">
+            <input type="email" class="form-control me-2" placeholder="Email Address" aria-label="Email"
+              style="border-radius: 0%; width: auto;">
+            <button class="boton_suscribe" type="submit"><b>Subscribe</b></button>
+          </form>
         </div>
       </div>
 
-    </footer>
+      <!-- Footer Bottom -->
+
+      <!-- Texto de derechos reservados a la izquierda -->
+      <p class="mb-0 text-white">&copy; 2020. All rights reserved.</p>
+
+      <!-- Íconos de redes sociales a la derecha -->
+      <div class="mb-0">
+        <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
 
   </footer>
 
+</footer>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-crossorigin="anonymous"></script>
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
