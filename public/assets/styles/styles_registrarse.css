@@ -98,7 +98,7 @@ footer {
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
   min-height: 100vh; /* Altura mínima para llenar la pantalla */
-  background-color: white; /* Color de fondo */
+  background-color: #154457; /* Color de fondo */
   margin-top: 5%;
 }
 
@@ -130,9 +130,15 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
 /* Estilos para los campos de entrada */
-.input-box input,
+
 .checkbox-container input {
   width: calc(100% -10px);
   padding: 10px;
@@ -190,7 +196,7 @@ a:hover {
 .c_title {
   text-align: center; /* Centrar el texto */
   margin: 0; /* Espacio superior e inferior para separar del cuadro */
-  color: 2c2c2c;
+  color: white;
 }
 
 /* Asegurando que el pie de página esté al final de la página */
