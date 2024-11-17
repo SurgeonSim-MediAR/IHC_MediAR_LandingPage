@@ -85,8 +85,7 @@ a {
 .sectionSimulador-text1,
 .sectionSimulador2-text2,
 .hero-subtitle,
-.hero-title,
-.hero-description {
+.hero-title {
   color: #2c2c2c; /* Cambiado a #2c2c2c para todo el texto de la sección 1 */
 }
 
@@ -109,7 +108,6 @@ a {
   font-size: 24px; /* Aumenta el tamaño de la descripción para que coincida con la sección 2 */
   color: #2c2c2c; /* Asegúrate de que el color sea consistente */
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: bold; /* Negrita */
 }
 
 /* Section 1 Text Specific Styles (if needed) */
@@ -130,6 +128,7 @@ a {
 
 .sectionEntorno-text2 {
   font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
 }
 
 /* Section Backgrounds */
@@ -171,13 +170,56 @@ a {
   text-align: center; /* Alinea el texto al centro */
 }
 
-.footer-background {
+.boton_suscribe {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  color: #154457;
+  border: 2px solid transparent;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.boton_suscribe:hover {
+  background-color: #1b3f45;
+  color: white;
+  border-color: transparent;
+}
+
+.boton_suscribe {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  color: #154457;
+  border: 2px solid transparent;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.boton_suscribe:hover {
+  background-color: #1b3f45;
+  color: white;
+  border-color: transparent;
+}
+
+footer {
   background-color: #154457;
-  background-size: cover;
-  background-position: center;
-  width: auto;
-  height: auto;
-  padding: 0;
-  margin-top: auto;
-  background-repeat: no-repeat;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+}
+
+.footer a {
+  color: white; /* Color de los enlaces en el pie de página */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Subrayado cuando el cursor está sobre el enlace */
 }
