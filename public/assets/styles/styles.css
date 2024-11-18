@@ -333,12 +333,12 @@ a {
 
 /* Section 1 Background */
 .section1-background {
-  background-image: url("/public/assets/img/fondo.png") !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  height: 100vh !important;
-  width: 100vw !important;
+  background-image: url("/public/assets/img/fondo.png") important;
+  background-size: cover important;
+  background-position: center important;
+  background-repeat: no-repeat important;
+  height: 100vh important;
+  width: 100vw important;
 }
 
 .section2-background {
