@@ -167,10 +167,13 @@ body {
   color: white;
   border-color: transparent;
 }
+/* Make carousel images fully responsive and prevent horizontal overflow */
 .carousel-item img {
-  width: 200vw;
-  height: 100vh;
-  zoom: 70%;
+  width: 100%;
+  margin-left: 50px !important;
+  max-height: 80vh;
+  zoom: 100% !important;
+ 
 }
 
 .section4-button button {
@@ -338,7 +341,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .section2-background {
@@ -398,19 +401,30 @@ a {
 /* Usamos media queries para ajustar según el tamaño de la pantalla */
 @media (max-width: 768px) {
   .section1-background {
-    margin-top: 100px;
-    height: 50vh;
+    margin-top: 64px;
+    height: 60vh;
   }
   .carousel-item img {
-    zoom: 30%;
+    max-height: 40vh;
   }
   .section4-button {
-    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -380px !important;
+    margin-left: -110px !important;
+  
   }
   .section2-button button {
     margin-top: 420px;
-    margin-left: 40px;
+    
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    overflow-wrap: break-word;
   }
   .section2-text-box {
     background-color: white;
@@ -440,7 +454,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: pretty;
     width: 100%;
     margin-top: 30px;
     overflow-wrap: break-word;
@@ -472,18 +486,19 @@ a {
   }
   .text-title {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 20px;
+    font-size: clamp(18px, 6vw, 28px);
     color: white;
     align-items: center;
     display: inline-block;
     overflow-wrap: break-word;
+    margin-top: 100px !important; 
+    
   }
 
   .text-subtitle {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 18px;
+    font-size: clamp(14px, 4.5vw, 18px);
     color: #cccccc;
-
     align-items: center;
     overflow-wrap: break-word;
   }
@@ -496,11 +511,12 @@ a {
 
   /* Section 1 Text */
   .section1-text1 {
-    font-size: 30px;
+    font-size: 30px !important;
 
     margin-top: -40px;
     width: 100%;
     height: 250px;
+    
   }
 
   .section1-text2 {
@@ -556,6 +572,62 @@ a {
   .section2-button {
     margin-top: -400px;
     margin-left: 200px;
+  }
+  .section3-subtitle {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: pretty;
+    text-align: pretty;
+    width: 100%;
+    font-size: 15px !important;
+    padding-block: 10px !important;
+    padding-inline: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  .section4-text-title {
+    font-size: 30px !important;
+    margin-top: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-left: 25px !important;
+  }
+
+}
+
+/* Testimonial carousel responsiveness */
+@media (max-width: 756px) {
+  .card {
+    width: 90vw;           /* ocupar casi todo el ancho del móvil */
+    width: 100% !important;
+    height: 100% !important;
+    
+ 
+    text-align: pretty !important;
+    align-items: pretty !important;
+    justify-content: pretty !important;
+    max-width: 420px;      /* límite razonable */
+  }
+  .card-container {
+    flex-direction: column;   /* apilar tarjetas */
+    align-items: center;      /* centrar */
+  }
+  /* Acolchado lateral para evitar cortes con el borde de la pantalla */
+  #carouselExample .carousel-item > .d-flex,
+  #carouselExample .carousel-item {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
